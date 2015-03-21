@@ -2,6 +2,11 @@
 
 This is a selection of the parts used to design Music Thing modules 
 
+##Installation 
+- Download using the Download ZIP button on the right --> 
+- Copy to your eagle Libraries folder 
+- Check back for upgrades regularly 
+
 ##Description of parts 
 - 9MM_SNAP-IN_POT for Alpha vertical pots and similar 
 - 9MM_SNAP-IN_POT_CHASSIS for Alpha pots, contains a pin for the metal chassis for grounding 
