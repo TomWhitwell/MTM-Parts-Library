@@ -3,7 +3,7 @@
 This is a selection of the parts used to design Music Thing modules 
 
 ##Installation 
-- Download using the Download ZIP button on the right --> 
+- Download using the [Download ZIP](https://github.com/TomWhitwell/MTM-Parts-Library/archive/master.zip) button on the right --> 
 - Copy to your eagle Libraries folder 
 - Check back for upgrades regularly 
 
