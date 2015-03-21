@@ -3,11 +3,11 @@
 This is a selection of the parts used to design Music Thing modules 
 
 ##Description of parts 
-- 9MM_SNAP-IN_POT 
-- 9MM_SNAP-IN_POT_CHASSIS 
-- BOURNS_3362P
-- D6_PUSH_SWITCH
-- DAC0800 
+- 9MM_SNAP-IN_POT for Alpha vertical pots and similar 
+- 9MM_SNAP-IN_POT_CHASSIS for Alpha pots, contains a pin for the metal chassis for grounding 
+- BOURNS_3362P for PCB trimmer used in Radio Music
+- D6_PUSH_SWITCH push button Buchla 200e - style switch used in Radio Music (improved footprint with larger pin holes) 
+- DAC0800 Digital Audio Converter chip used in Turing Machine, DIL and SMD versions 
 - EURO POWER HEADER in three variants 
     - Regular 
     - Fat - with larger pads for easier soldering 
