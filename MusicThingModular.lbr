@@ -696,6 +696,48 @@ NS Package M08A</description>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="ALPHA_ILL_FADER_20MM">
+<pad name="2" x="-15.24" y="3.81" drill="0.8" shape="square"/>
+<pad name="1" x="-15.24" y="1.27" drill="0.8" shape="square"/>
+<pad name="L" x="-15.24" y="-1.27" drill="0.8" shape="square"/>
+<pad name="E" x="-15.24" y="-3.81" drill="0.8" shape="square"/>
+<pad name="B" x="15.24" y="-3.81" drill="0.8" shape="square"/>
+<pad name="3" x="15.24" y="1.27" drill="0.8" shape="square"/>
+<wire x1="-17.28" y1="3.81" x2="-17.28" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-17.28" y1="-3.81" x2="-16.51" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-13.97" y1="-3.81" x2="13.97" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="-3.81" x2="17.28" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="17.28" y1="-3.81" x2="17.28" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="17.28" y1="3.81" x2="-13.97" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="-16.51" y1="3.81" x2="-17.28" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="-13.66" y1="1.27" x2="13.16" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="13.16" y1="1.27" x2="13.16" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="13.16" y1="-1.27" x2="-13.66" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-13.66" y1="-1.27" x2="-13.66" y2="1.27" width="0.2032" layer="21"/>
+<text x="-12.42" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-12.92" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="ALPHA_ILL_FADER_30MM">
+<pad name="2" x="-20.32" y="3.81" drill="0.8" shape="square"/>
+<pad name="1" x="-20.32" y="1.27" drill="0.8" shape="square"/>
+<pad name="L" x="-20.32" y="-1.27" drill="0.8" shape="square"/>
+<pad name="E" x="-20.32" y="-3.81" drill="0.8" shape="square"/>
+<pad name="B" x="20.32" y="-3.81" drill="0.8" shape="square"/>
+<pad name="3" x="20.32" y="1.27" drill="0.8" shape="square"/>
+<wire x1="-22.36" y1="3.81" x2="-22.36" y2="-3.81" width="0.2032" layer="51"/>
+<wire x1="-22.36" y1="-3.81" x2="-21.59" y2="-3.81" width="0.2032" layer="51"/>
+<wire x1="-19.05" y1="-3.81" x2="19.05" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="21.59" y1="-3.81" x2="22.36" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="22.36" y1="-3.81" x2="22.36" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="22.36" y1="3.81" x2="-19.05" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="-21.59" y1="3.81" x2="-22.36" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="-18.74" y1="1.27" x2="18.24" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="18.24" y1="1.27" x2="18.24" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="18.24" y1="-1.27" x2="-18.74" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-18.74" y1="-1.27" x2="-18.74" y2="1.27" width="0.2032" layer="21"/>
+<text x="-17.5" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-18" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTORS">
@@ -1006,6 +1048,55 @@ NS Package M08A</description>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="POT_US-">
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="1.27" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.2032" layer="94"/>
+<wire x1="2.032" y1="-4.699" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="LED">
+<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.032" y1="-0.762" x2="-3.429" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-3.302" y2="-3.302" width="0.1524" layer="94"/>
+<text x="3.556" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="C" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="A" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.429" y="-2.159"/>
+<vertex x="-3.048" y="-1.27"/>
+<vertex x="-2.54" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.302" y="-3.302"/>
+<vertex x="-2.921" y="-2.413"/>
+<vertex x="-2.413" y="-2.921"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1419,6 +1510,50 @@ Use Value for specific type of diode</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPHA_20MM_ILLUM_FADER" uservalue="yes">
+<description>20mm Alpha Illuminated Fader</description>
+<gates>
+<gate name="FADE" symbol="POT_US-" x="-10.16" y="0"/>
+<gate name="LED" symbol="LED" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="ALPHA_ILL_FADER_20MM">
+<connects>
+<connect gate="FADE" pin="A" pad="3"/>
+<connect gate="FADE" pin="E" pad="1"/>
+<connect gate="FADE" pin="S" pad="2"/>
+<connect gate="LED" pin="A" pad="B"/>
+<connect gate="LED" pin="C" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPHA_30MM_ILLUM_FADER" uservalue="yes">
+<description>30mm Alpha Illuminated Fader</description>
+<gates>
+<gate name="FADE" symbol="POT_US-" x="-10.16" y="0"/>
+<gate name="LED" symbol="LED" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="_" package="ALPHA_ILL_FADER_30MM">
+<connects>
+<connect gate="FADE" pin="A" pad="3"/>
+<connect gate="FADE" pin="E" pad="1"/>
+<connect gate="FADE" pin="S" pad="2"/>
+<connect gate="LED" pin="A" pad="B"/>
+<connect gate="LED" pin="C" pad="E"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="Value" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
