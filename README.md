@@ -27,6 +27,7 @@ This is a selection of the parts used to design Music Thing modules
 - D6_PUSH_SWITCH push button Buchla 200e - style switch used in Radio Music (improved footprint with larger pin holes) 
 - DAC0800 Digital Audio Converter chip used in Turing Machine, DIL and SMD versions 
 - TL072, TL074 standard dual and quad op amps, DIL and SMD versions 
+- Mini SPDT small right angle spdt switch like Apem MHSS1105  
 
 
 
