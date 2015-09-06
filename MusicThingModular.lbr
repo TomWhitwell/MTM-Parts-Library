@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -183,9 +183,9 @@
 </package>
 <package name="THONKICONN">
 <description>3.5mm socket for Eurorack modular synths</description>
-<pad name="P$3" x="0" y="4.84" drill="1.55" shape="square"/>
-<pad name="P$2" x="0" y="-3.38" drill="1.55" shape="square"/>
-<pad name="P$1" x="0" y="-6.48" drill="1.35" shape="square"/>
+<pad name="P$3_TIP" x="0" y="4.84" drill="1.55" shape="square"/>
+<pad name="P$2_SWITCH" x="0" y="-3.38" drill="1.55" shape="square"/>
+<pad name="P$1_SLEEVE" x="0" y="-6.48" drill="1.35" shape="square"/>
 <wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
 <wire x1="4.5" y1="6" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
 <wire x1="4.5" y1="-4.5" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
@@ -785,9 +785,9 @@ NS Package M08A</description>
 <wire x1="-1.5" y1="6" x2="-1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="1.5" y1="4" x2="1.5" y2="6" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="5" drill="1.1" thermals="no"/>
-<pad name="P$2" x="0" y="-3.5" drill="1.1"/>
-<pad name="P$3" x="0" y="-6.5" drill="1.1"/>
+<pad name="P$1_TIP" x="0" y="5" drill="1.1" thermals="no"/>
+<pad name="P$2_SWITCH" x="0" y="-3.5" drill="1.1"/>
+<pad name="P$3_SLEEVE" x="0" y="-6.5" drill="1.1"/>
 <circle x="0" y="0" radius="2.690721875" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="-4.6" x2="-0.2" y2="-6.7" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="-6.7" x2="0.2" y2="-6.7" width="0.127" layer="21"/>
@@ -1102,9 +1102,9 @@ NS Package M08A</description>
 <text x="-2.54" y="4.064" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-6.096" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="2.286" y1="-0.508" x2="7.874" y2="0.508" layer="94" rot="R90"/>
-<pin name="5" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="SLEEVE" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
+<pin name="TIP" x="-5.08" y="2.54" visible="pad" length="short" direction="pas"/>
+<pin name="SWITCH" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
 </symbol>
 <symbol name="YAMAICHI_MICROSD">
 <wire x1="-2.54" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
@@ -1567,9 +1567,9 @@ NS Package M08A</description>
 <devices>
 <device name="OLD" package="THONKICONN">
 <connects>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$2"/>
-<connect gate="G$1" pin="5" pad="P$1"/>
+<connect gate="G$1" pin="SLEEVE" pad="P$1_SLEEVE"/>
+<connect gate="G$1" pin="SWITCH" pad="P$2_SWITCH"/>
+<connect gate="G$1" pin="TIP" pad="P$3_TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1577,9 +1577,9 @@ NS Package M08A</description>
 </device>
 <device name="NEW" package="WQP-PJ301M-12_JACK">
 <connects>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$2"/>
-<connect gate="G$1" pin="5" pad="P$1"/>
+<connect gate="G$1" pin="SLEEVE" pad="P$3_SLEEVE"/>
+<connect gate="G$1" pin="SWITCH" pad="P$2_SWITCH"/>
+<connect gate="G$1" pin="TIP" pad="P$1_TIP"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2018,9 +2018,9 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 <devices>
 <device name="" package="WQP-PJ301M-12_JACK">
 <connects>
-<connect gate="G$1" pin="1" pad="P$3"/>
-<connect gate="G$1" pin="2" pad="P$1"/>
-<connect gate="G$1" pin="3" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="P$3_SLEEVE"/>
+<connect gate="G$1" pin="2" pad="P$1_TIP"/>
+<connect gate="G$1" pin="3" pad="P$2_SWITCH"/>
 </connects>
 <technologies>
 <technology name=""/>
