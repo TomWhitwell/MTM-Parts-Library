@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2358,6 +2358,24 @@ NS Package M08A</description>
 <text x="-21.59" y="-3.81" size="6.35" layer="20" font="vector" ratio="1">CUT OUT </text>
 <wire x1="-26" y1="0" x2="26" y2="0" width="18" layer="46"/>
 </package>
+<package name="MONO_CASSETTE_HEAD">
+<wire x1="-5.2" y1="-2.8" x2="-5.2" y2="5.2" width="0.127" layer="51"/>
+<wire x1="5.2" y1="-2.8" x2="5.2" y2="5.2" width="0.127" layer="21"/>
+<wire x1="-5.4" y1="5.1" x2="-5.4" y2="-2.8" width="0.4" layer="21"/>
+<wire x1="5.2" y1="5.2" x2="-5.2" y2="5.2" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.7" x2="3" y2="1.7" width="0.127" layer="21"/>
+<wire x1="3" y1="1.7" x2="-3" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.7" x2="-3" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="0.85" x2="1.25" y2="0.85" width="0.127" layer="21"/>
+<wire x1="1.25" y1="0.85" x2="1.25" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-0.85" x2="-1.25" y2="-0.85" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-0.85" x2="-1.25" y2="0.85" width="0.127" layer="21"/>
+<wire x1="-9" y1="-3" x2="13.46" y2="-3" width="0.4" layer="51"/>
+<wire x1="5.2" y1="-2.8" x2="-5.2" y2="-2.8" width="0.127" layer="21"/>
+<pad name="P$1" x="-2.25" y="3.3" drill="1.4" shape="square"/>
+<pad name="P$2" x="2.25" y="3.3" drill="1.4" shape="square"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTORS">
@@ -2839,6 +2857,16 @@ NS Package M08A</description>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MONO_CASSETTE_HEAD">
+<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
+<text x="-2.54" y="2.54" size="1.27" layer="94">TAPE
+HEAD</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3514,7 +3542,29 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </device>
 </devices>
 </deviceset>
+<deviceset name="MONO_CASSETTE_HEAD">
+<gates>
+<gate name="G$1" symbol="MONO_CASSETTE_HEAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MONO_CASSETTE_HEAD">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
