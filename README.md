@@ -28,6 +28,7 @@ This is a selection of the parts used to design Music Thing modules
 - DAC0800 Digital Audio Converter chip used in Turing Machine, DIL and SMD versions 
 - TL072, TL074 standard dual and quad op amps, DIL and SMD versions 
 - Mini SPDT small right angle spdt switch like Apem MHSS1105  
+- ALPHA Illuminated faders in 30 and 20mm 
 
 
 
