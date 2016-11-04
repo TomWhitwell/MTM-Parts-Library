@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -4066,6 +4066,46 @@ rotated 45 deg.</description>
 <wire x1="2.2225" y1="1.5875" x2="2.2225" y2="0.9525" width="0.127" layer="22"/>
 <wire x1="1.905" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="22"/>
 </package>
+<package name="DUAL_9MM_SNAP-IN_POT">
+<description>9mm vertical snap-in pot, Alpha / Panasonic style</description>
+<wire x1="-4.1" y1="5.4" x2="4.1" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="-5.35" width="0.2032" layer="51"/>
+<wire x1="4.1" y1="-5.9" x2="-4.1" y2="-5.9" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.65" y2="4.85" width="0.2032" layer="51"/>
+<wire x1="-4.75" y1="0.9" x2="-5.5" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-5.5" y1="0.9" x2="-5.5" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-5.5" y1="-0.9" x2="-4.75" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="4.75" y1="-0.9" x2="5.5" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="5.5" y1="-0.9" x2="5.5" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="5.5" y1="0.9" x2="4.75" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="-4.1" y1="4.85" x2="-4.65" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.1" y1="5.4" x2="-4.1" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.1" y1="-5.35" x2="-4.1" y2="-5.9" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.1" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-5.35" x2="4.65" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="-5.9" x2="4.1" y2="-5.35" width="0.2032" layer="21"/>
+<wire x1="4.1" y1="4.85" x2="4.1" y2="5.4" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.1" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="2.65" x2="-4.65" y2="4.85" width="0.2032" layer="21"/>
+<wire x1="-4.65" y1="-5.35" x2="-4.65" y2="-2.15" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="4.85" x2="4.65" y2="2.65" width="0.2032" layer="21"/>
+<wire x1="4.65" y1="-2.15" x2="4.65" y2="-5.35" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.397" width="0.0508" layer="21"/>
+<pad name="1" x="-2.5" y="-7" drill="1.1" shape="square" rot="R270"/>
+<pad name="2" x="0" y="-7" drill="1.1" shape="octagon" rot="R270"/>
+<pad name="3" x="2.5" y="-7" drill="1.1" shape="octagon" rot="R270"/>
+<pad name="CHASSIS2" x="4.5" y="0" drill="2.1" shape="square" rot="R270"/>
+<pad name="CHASSIS1" x="-4.5" y="0" drill="2.1" shape="square" rot="R270"/>
+<text x="-3.81" y="2.54" size="1.0668" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.925" y1="-7.325" x2="-2.075" y2="-6" layer="51"/>
+<rectangle x1="-0.425" y1="-7.325" x2="0.425" y2="-6" layer="51"/>
+<rectangle x1="2.075" y1="-7.325" x2="2.925" y2="-6" layer="51"/>
+<circle x="0" y="0" radius="1.016" width="0.0508" layer="21"/>
+<pad name="1B" x="-2.5" y="-9.54" drill="1.1" shape="square" rot="R270"/>
+<pad name="2B" x="0" y="-9.54" drill="1.1" shape="octagon" rot="R270"/>
+<pad name="3B" x="2.5" y="-9.54" drill="1.1" shape="octagon" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTORS">
@@ -6795,6 +6835,29 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+ ++"/>
 <connect gate="G$1" pin="-" pad="- --"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALPHA-9MM-DUALPOT" prefix="VR" uservalue="yes">
+<description>9mm vertical snap-in pot, Alpha / Panasonic style, with a connection to the metal chassis for grounding</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER_CHASSIS" x="0" y="0"/>
+<gate name="G$2" symbol="POTENTIOMETER" x="27.94" y="0"/>
+</gates>
+<devices>
+<device name="" package="DUAL_9MM_SNAP-IN_POT">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="P$1" pad="CHASSIS1 CHASSIS2"/>
+<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$2" pin="A" pad="1B"/>
+<connect gate="G$2" pin="E" pad="3B"/>
+<connect gate="G$2" pin="S" pad="2B"/>
 </connects>
 <technologies>
 <technology name=""/>
