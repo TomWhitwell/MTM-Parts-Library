@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -48,7 +48,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -778,14 +778,14 @@ NS Package M08A</description>
 <wire x1="-4.5" y1="0.75" x2="-2.5" y2="0.75" width="0.127" layer="51"/>
 </package>
 <package name="WQP-PJ301M-12_JACK">
-<wire x1="-4.5" y1="6" x2="-1.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="6" x2="1.5" y2="6" width="0.127" layer="21"/>
-<wire x1="1.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="6" x2="-4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-4.5" y1="-4.5" x2="0.2" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="0.2" y1="-4.5" x2="4.5" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="4.5" y1="-4.5" x2="4.5" y2="6" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3.162275" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="6" x2="-1.5" y2="6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="6" x2="1.5" y2="6" width="0.127" layer="51"/>
+<wire x1="1.5" y1="6" x2="4.5" y2="6" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="6" x2="-4.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-4.5" y1="-4.5" x2="0.2" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="0.2" y1="-4.5" x2="4.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="4.5" y1="-4.5" x2="4.5" y2="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="3.162275" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="6" x2="-1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="4" x2="1.5" y2="4" width="0.127" layer="21"/>
 <wire x1="1.5" y1="4" x2="1.5" y2="6" width="0.127" layer="21"/>
@@ -798,6 +798,14 @@ NS Package M08A</description>
 <wire x1="0.2" y1="-6.7" x2="0.2" y2="-4.5" width="0.127" layer="21"/>
 <rectangle x1="-2.8" y1="-2.8" x2="2.8" y2="2.8" layer="41"/>
 <text x="4.5212" y="-4.7244" size="1.016" layer="21" rot="SR180">&gt;NAME</text>
+<wire x1="-4.445" y1="5.588" x2="-4.445" y2="5.969" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="5.969" x2="-4.064" y2="5.969" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-4.064" x2="-4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="-4.445" y1="-4.445" x2="-4.064" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="4.064" y1="-4.445" x2="4.445" y2="-4.445" width="0.127" layer="21"/>
+<wire x1="4.445" y1="-4.445" x2="4.445" y2="-4.064" width="0.127" layer="21"/>
+<wire x1="4.064" y1="5.969" x2="4.445" y2="5.969" width="0.127" layer="21"/>
+<wire x1="4.445" y1="5.969" x2="4.445" y2="5.588" width="0.127" layer="21"/>
 </package>
 <package name="MA07-2_BACKSIDE">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
