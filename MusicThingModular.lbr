@@ -4106,8 +4106,8 @@ rotated 45 deg.</description>
 <pad name="1" x="-2.5" y="-7" drill="1.1" shape="square" rot="R270"/>
 <pad name="2" x="0" y="-7" drill="1.1" shape="octagon" rot="R270"/>
 <pad name="3" x="2.5" y="-7" drill="1.1" shape="octagon" rot="R270"/>
-<pad name="CHASSIS2" x="4.5" y="0" drill="2.1" shape="square" rot="R270"/>
-<pad name="CHASSIS1" x="-4.5" y="0" drill="2.1" shape="square" rot="R270"/>
+<pad name="CHASSIS2" x="4.5" y="0" drill="2.1" diameter="2.54" rot="R270"/>
+<pad name="CHASSIS1" x="-4.5" y="0" drill="2.1" diameter="2.54" rot="R270"/>
 <text x="-3.81" y="2.54" size="1.0668" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.925" y1="-7.325" x2="-2.075" y2="-6" layer="51"/>
