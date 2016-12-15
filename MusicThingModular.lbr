@@ -7068,6 +7068,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="RS6-DC/DC">
+<description>5v -&gt; +/-12v DC DC Converter</description>
 <gates>
 <gate name="G$1" symbol="DC+-2" x="0" y="0"/>
 </gates>
