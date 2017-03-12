@@ -4252,14 +4252,14 @@ KILLS FASCISTS</text>
 <circle x="0" y="0" radius="5" width="0.05" layer="51"/>
 <circle x="0" y="0" radius="3.6" width="0.05" layer="51"/>
 <text x="-2.54" y="-3.175" size="1.016" layer="25" rot="R45">&gt;Name</text>
-<smd name="SWITCH_T" x="-3.7" y="0" dx="4" dy="1.35" layer="1" roundness="100" rot="R90"/>
-<smd name="SWITCH_B" x="-3.7" y="0" dx="4" dy="1.35" layer="16" roundness="100" rot="R90"/>
-<smd name="GND_B" x="3.7" y="0" dx="4" dy="1.35" layer="16" roundness="100" rot="R90"/>
-<smd name="LEFT_B" x="0" y="3.5" dx="4" dy="1.35" layer="16" roundness="100" rot="R180"/>
-<smd name="RIGHT_B" x="0" y="-4.5" dx="4" dy="1.35" layer="16" roundness="100" rot="R180"/>
-<smd name="GND_T" x="3.7" y="0" dx="4" dy="1.35" layer="1" roundness="100" rot="R90"/>
-<smd name="LEFT_T" x="0" y="3.5" dx="4" dy="1.35" layer="1" roundness="100" rot="R180"/>
-<smd name="RIGHT_T" x="0" y="-4.5" dx="4" dy="1.35" layer="1" roundness="100" rot="R180"/>
+<smd name="SWITCH_T" x="-3.7" y="0" dx="4" dy="1.35" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="SWITCH_B" x="-3.7" y="0" dx="4" dy="1.35" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="GND_B" x="3.7" y="0" dx="4" dy="1.35" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="LEFT_B" x="0" y="3.5" dx="4" dy="1.35" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="RIGHT_B" x="0" y="-4.5" dx="4" dy="1.35" layer="16" roundness="100" rot="R180" cream="no"/>
+<smd name="GND_T" x="3.7" y="0" dx="4" dy="1.35" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="LEFT_T" x="0" y="3.5" dx="4" dy="1.35" layer="1" roundness="100" rot="R180" cream="no"/>
+<smd name="RIGHT_T" x="0" y="-4.5" dx="4" dy="1.35" layer="1" roundness="100" rot="R180" cream="no"/>
 <wire x1="-1.299265625" y1="-4.925" x2="1.300734375" y2="-4.925" width="0.0254" layer="20"/>
 <wire x1="1.300734375" y1="-4.925" x2="1.725" y2="-4.500734375" width="0.0254" layer="20" curve="90"/>
 <wire x1="1.725" y1="-4.500734375" x2="1.299265625" y2="-4.075" width="0.0254" layer="20" curve="90"/>
@@ -4386,10 +4386,10 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <hole x="0" y="0" drill="8"/>
 </package>
 <package name="PANEL_4HP">
-<wire x1="0" y1="0" x2="128.5" y2="0" width="0.127" layer="20"/>
-<wire x1="128.5" y1="0" x2="128.5" y2="20" width="0.127" layer="20"/>
-<wire x1="128.5" y1="20" x2="0" y2="20" width="0.127" layer="20"/>
-<wire x1="0" y1="20" x2="0" y2="0" width="0.127" layer="20"/>
+<wire x1="0" y1="0" x2="128.5" y2="0" width="0.0254" layer="20"/>
+<wire x1="128.5" y1="0" x2="128.5" y2="20" width="0.0254" layer="20"/>
+<wire x1="128.5" y1="20" x2="0" y2="20" width="0.0254" layer="20"/>
+<wire x1="0" y1="20" x2="0" y2="0" width="0.0254" layer="20"/>
 <wire x1="1.39" y1="11.21" x2="1.39" y2="13.75" width="0.002540625" layer="20"/>
 <wire x1="4.59" y1="11.21" x2="4.59" y2="13.75" width="0.002540625" layer="20"/>
 <wire x1="1.39" y1="13.75" x2="4.59" y2="13.75" width="0.002540625" layer="20" curve="-180"/>
@@ -4404,7 +4404,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <wire x1="125.49" y1="11.21" x2="125.49" y2="13.75" width="3.2" layer="46"/>
 <rectangle x1="0" y1="0" x2="10" y2="20" layer="30"/>
 <rectangle x1="118.5" y1="0" x2="128.5" y2="20" layer="30"/>
-<polygon width="0.127" layer="16">
+<polygon width="0.0254" layer="16">
 <vertex x="0" y="0"/>
 <vertex x="128.27" y="0"/>
 <vertex x="128.5" y="20"/>
@@ -4435,6 +4435,32 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8541_8542_8544
 <vertex x="128.27" y="0"/>
 <vertex x="128.5" y="30"/>
 <vertex x="0" y="30"/>
+</polygon>
+</package>
+<package name="PANEL_3HP">
+<wire x1="0" y1="0" x2="128.5" y2="0" width="0.0254" layer="20"/>
+<wire x1="128.5" y1="0" x2="128.5" y2="14.94" width="0.0254" layer="20"/>
+<wire x1="128.5" y1="14.94" x2="0" y2="14.94" width="0.0254" layer="20"/>
+<wire x1="0" y1="14.94" x2="0" y2="0" width="0.0254" layer="20"/>
+<wire x1="1.39" y1="6.27" x2="1.39" y2="8.81" width="0.002540625" layer="20"/>
+<wire x1="4.59" y1="6.27" x2="4.59" y2="8.81" width="0.002540625" layer="20"/>
+<wire x1="1.39" y1="8.81" x2="4.59" y2="8.81" width="0.002540625" layer="20" curve="-180"/>
+<wire x1="1.39" y1="6.27" x2="4.59" y2="6.27" width="0.002540625" layer="20" curve="180"/>
+<text x="2.99" y="7.54" size="0.762" layer="20" rot="R90" align="center">CUT OUT</text>
+<wire x1="2.99" y1="6.27" x2="2.99" y2="8.81" width="3.2" layer="46"/>
+<wire x1="123.89" y1="6.27" x2="123.89" y2="8.81" width="0.002540625" layer="20"/>
+<wire x1="127.09" y1="6.27" x2="127.09" y2="8.81" width="0.002540625" layer="20"/>
+<wire x1="123.89" y1="8.81" x2="127.09" y2="8.81" width="0.002540625" layer="20" curve="-180"/>
+<wire x1="123.89" y1="6.27" x2="127.09" y2="6.27" width="0.002540625" layer="20" curve="180"/>
+<text x="125.49" y="7.54" size="0.762" layer="20" rot="R90" align="center">CUT OUT</text>
+<wire x1="125.49" y1="6.27" x2="125.49" y2="8.81" width="3.2" layer="46"/>
+<rectangle x1="0" y1="0" x2="10" y2="14.94" layer="30"/>
+<rectangle x1="118.5" y1="0" x2="128.5" y2="14.94" layer="30"/>
+<polygon width="0.0254" layer="16">
+<vertex x="0" y="0"/>
+<vertex x="128.5" y="0"/>
+<vertex x="128.5" y="14.94"/>
+<vertex x="0" y="14.94"/>
 </polygon>
 </package>
 </packages>
