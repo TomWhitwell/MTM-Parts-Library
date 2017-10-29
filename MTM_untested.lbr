@@ -42,13 +42,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -202,6 +202,69 @@
 46.5-48.5 long  
 58.45 spacing between pads </text>
 </package>
+<package name="23MM_SPEAKER">
+<wire x1="-11.5" y1="-28.75" x2="-11.5" y2="28.75" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="28.75" x2="11.5" y2="28.75" width="0.127" layer="51"/>
+<wire x1="11.5" y1="28.75" x2="11.5" y2="-28.75" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-28.75" x2="-11.5" y2="-28.75" width="0.127" layer="51"/>
+<circle x="0" y="24.55" radius="1.7" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="29.21" x2="-11.5" y2="41.25" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="41.25" x2="0.7" y2="41.25" width="0.127" layer="51"/>
+<wire x1="0.7" y1="41.25" x2="0.7" y2="29.21" width="0.127" layer="51"/>
+<hole x="-5.4" y="36.25" drill="5.8"/>
+<wire x1="11.5" y1="-29.21" x2="11.5" y2="-41.25" width="0.127" layer="51"/>
+<wire x1="11.5" y1="-41.25" x2="-0.7" y2="-41.25" width="0.127" layer="51"/>
+<wire x1="-0.7" y1="-41.25" x2="-0.7" y2="-29.21" width="0.127" layer="51"/>
+<hole x="5.4" y="-36.25" drill="5.8"/>
+<hole x="-10" y="26" drill="4"/>
+<hole x="-4" y="26" drill="4"/>
+<hole x="2" y="26" drill="4"/>
+<hole x="8" y="26" drill="4"/>
+<hole x="-7" y="21" drill="4"/>
+<hole x="-1" y="21" drill="4"/>
+<hole x="5" y="21" drill="4"/>
+<hole x="11" y="21" drill="4"/>
+<hole x="-10" y="16" drill="4"/>
+<hole x="-4" y="16" drill="4"/>
+<hole x="2" y="16" drill="4"/>
+<hole x="8" y="16" drill="4"/>
+<hole x="-7" y="11" drill="4"/>
+<hole x="-1" y="11" drill="4"/>
+<hole x="5" y="11" drill="4"/>
+<hole x="11" y="11" drill="4"/>
+<hole x="-10" y="6" drill="4"/>
+<hole x="-4" y="6" drill="4"/>
+<hole x="2" y="6" drill="4"/>
+<hole x="8" y="6" drill="4"/>
+<hole x="-7" y="1" drill="4"/>
+<hole x="-1" y="1" drill="4"/>
+<hole x="5" y="1" drill="4"/>
+<hole x="11" y="1" drill="4"/>
+<hole x="-10" y="-4" drill="4"/>
+<hole x="-4" y="-4" drill="4"/>
+<hole x="2" y="-4" drill="4"/>
+<hole x="8" y="-4" drill="4"/>
+<hole x="-7" y="-9" drill="4"/>
+<hole x="-1" y="-9" drill="4"/>
+<hole x="5" y="-9" drill="4"/>
+<hole x="11" y="-9" drill="4"/>
+<hole x="-10" y="-14" drill="4"/>
+<hole x="-4" y="-14" drill="4"/>
+<hole x="2" y="-14" drill="4"/>
+<hole x="8" y="-14" drill="4"/>
+<hole x="-7" y="-19" drill="4"/>
+<hole x="-1" y="-19" drill="4"/>
+<hole x="5" y="-19" drill="4"/>
+<hole x="11" y="-19" drill="4"/>
+<hole x="-10" y="-24" drill="4"/>
+<hole x="-4" y="-24" drill="4"/>
+<hole x="2" y="-24" drill="4"/>
+<hole x="8" y="-24" drill="4"/>
+<hole x="-7" y="-29" drill="4"/>
+<hole x="-1" y="-29" drill="4"/>
+<hole x="5" y="-29" drill="4"/>
+<hole x="11" y="-29" drill="4"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POTENTIOMETER_CHASSIS">
@@ -273,6 +336,17 @@
 <connect gate="G$1" pin="+" pad="CONTACT+"/>
 <connect gate="G$1" pin="-" pad="CONTACT-"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="23MM_SPEAKER">
+<gates>
+</gates>
+<devices>
+<device name="" package="23MM_SPEAKER">
 <technologies>
 <technology name=""/>
 </technologies>
