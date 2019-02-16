@@ -1182,13 +1182,13 @@ BOARD EDGE</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCF8574PW-PORT_EXPAND" prefix="U">
+<deviceset name="PCF8574ADW-PORT_EXPAND" prefix="U">
 <description>REMOTE 8-BIT I/O EXPANDER FOR I2C BUS</description>
 <gates>
 <gate name="A" symbol="PCF8574ADW_PORT_EXPAND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TSSOP" package="TSSOP-20">
+<device name="SOIC" package="TSSOP-20">
 <connects>
 <connect gate="A" pin="A0" pad="6"/>
 <connect gate="A" pin="A1" pad="7"/>
@@ -1209,6 +1209,7 @@ BOARD EDGE</text>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="MPN" value="PCF8574ADW" constant="no"/>
 <attribute name="OC_FARNELL" value="1758146" constant="no"/>
 <attribute name="OC_NEWARK" value="75C5232" constant="no"/>
 <attribute name="PACKAGE" value="SOIC-16" constant="no"/>
