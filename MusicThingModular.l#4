@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -353,7 +352,7 @@
 </package>
 <package name="EURO_POWER_HEADER">
 <description>Eurorack Modular Synth 5 x 2 power header</description>
-<wire x1="-6.731" y1="2.921" x2="-6.731" y2="-3.429" width="0.508" layer="21"/>
+<wire x1="-6.35" y1="3.175" x2="-6.35" y2="-3.175" width="0.508" layer="21"/>
 <wire x1="6.35" y1="1.905" x2="6.35" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="5.715" y1="2.54" x2="6.35" y2="1.905" width="0.1524" layer="21"/>
 <wire x1="6.35" y1="-1.905" x2="5.715" y2="-2.54" width="0.1524" layer="21"/>
@@ -382,7 +381,10 @@
 <text x="2.911053125" y="2.51271875" size="0.762" layer="21" ratio="15" rot="R90">GND</text>
 <text x="4.543421875" y="2.373603125" size="1.524" layer="21" ratio="15">+</text>
 <text x="-4.31823125" y="2.54" size="1.524" layer="21" ratio="15" rot="R90">-</text>
-<text x="-8.636" y="4.191" size="1.143" layer="21" rot="SR270">RED&gt;&gt;RED</text>
+<text x="-8.89" y="5.08" size="1.143" layer="21" rot="SR270">RED STRIPE</text>
+<wire x1="-4.445" y1="-3.175" x2="-5.715" y2="-3.175" width="0.3048" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.715" y2="-3.175" width="0.3048" layer="21"/>
+<wire x1="-5.715" y1="-3.175" x2="-5.08" y2="-3.81" width="0.3048" layer="21"/>
 </package>
 <package name="DO35-7">
 <description>Signal diode, 2 mm diameter, 7mm grid</description>
@@ -5789,7 +5791,7 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </device>
 </devices>
 </deviceset>
-<deviceset name="ALPHA_20MM_ILLUM_FADER" prefix="VR" uservalue="yes">
+<deviceset name="ALPHA_20MM_ILLUM_FADER" uservalue="yes">
 <description>20mm Alpha Illuminated Fader</description>
 <gates>
 <gate name="FADE" symbol="POT_US-" x="-10.16" y="0"/>
@@ -6030,26 +6032,16 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </device>
 </devices>
 </deviceset>
-<deviceset name="EURO_POWER_LOCK" prefix="C">
+<deviceset name="EURO_POWER_LOCK">
 <gates>
 <gate name="G$1" symbol="EURO_POWER" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="FAT-LOCK" package="EURO_PWR_HEADER_LOCK">
+<device name="" package="EURO_PWR_HEADER_LOCK">
 <connects>
 <connect gate="G$1" pin="+12V" pad="POS1 POS2"/>
 <connect gate="G$1" pin="-12V" pad="NEG1 NEG2"/>
 <connect gate="G$1" pin="GND" pad="GND1 GND2 GND3 GND4 GND5 GND6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SKINNY" package="EURO_POWER_HEADER">
-<connects>
-<connect gate="G$1" pin="+12V" pad="9 10"/>
-<connect gate="G$1" pin="-12V" pad="1 2"/>
-<connect gate="G$1" pin="GND" pad="3 4 5 6 7 8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7543,7 +7535,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SUBMINI_SPDT" prefix="SW">
+<deviceset name="SUBMINI_SPDT">
 <gates>
 <gate name="G$1" symbol="SPDT_SWITCH" x="0" y="0"/>
 </gates>
