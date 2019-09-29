@@ -1,13 +1,13 @@
-#Music Thing Modular Eagle Parts Library 
+# Music Thing Modular Eagle Parts Library 
 
 This is a selection of the parts used to design Music Thing modules 
 
-##Installation 
+## Installation 
 - Download using the [Download ZIP](https://github.com/TomWhitwell/MTM-Parts-Library/archive/master.zip) button on the right --> 
 - Copy to your eagle Libraries folder 
 - Check back for upgrades regularly 
 
-##Description of parts 
+## Description of parts 
 - EURO POWER HEADER in three variants 
     - Regular 
     - Fat - with larger pads for easier soldering 
