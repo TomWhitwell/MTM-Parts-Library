@@ -43,7 +43,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -2341,22 +2341,6 @@ DIN 965H</text>
 <smd name="A9-VBUS" x="1.52" y="6.4" dx="0.8" dy="1.15" layer="1"/>
 <smd name="A12-GND" x="2.75" y="6.4" dx="0.9" dy="1.15" layer="1"/>
 </package>
-<package name="PUI_32MM_ENC">
-<circle x="0" y="0" radius="16" width="0.127" layer="51"/>
-<rectangle x1="-18.5" y1="-18" x2="18.5" y2="28" layer="46"/>
-<wire x1="-19.05" y1="28.575" x2="19.05" y2="28.575" width="0.127" layer="51"/>
-<wire x1="19.05" y1="28.575" x2="19.05" y2="-19.05" width="0.127" layer="51"/>
-<wire x1="19.05" y1="-19.05" x2="-19.05" y2="-19.05" width="0.127" layer="51"/>
-<wire x1="-19.05" y1="-19.05" x2="-19.05" y2="28.575" width="0.127" layer="51"/>
-<hole x="0" y="31.8" drill="2.4"/>
-<hole x="0" y="-22" drill="2.4"/>
-<pad name="RED+" x="24.13" y="1.27" drill="1" shape="square"/>
-<pad name="BLACK-" x="24.13" y="-1.27" drill="1"/>
-<text x="21.209" y="-0.127" size="2.54" layer="21">+</text>
-<text x="-6.35" y="20.32" size="1.27" layer="46">LARGE 
-RECTANGULAR
-HOLE IN PCB </text>
-</package>
 </packages>
 <symbols>
 <symbol name="POTENTIOMETER_CHASSIS">
@@ -3205,17 +3189,6 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 <pin name="CC1" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="CC2" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="SHLD" x="12.7" y="-5.08" length="short" rot="R180"/>
-</symbol>
-<symbol name="PUI_SPEAKER">
-<wire x1="5.08" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="POS" x="-5.08" y="2.54" length="middle"/>
-<pin name="NEG" x="-5.08" y="-2.54" length="middle"/>
-<text x="0.762" y="2.032" size="1.27" layer="94">+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4217,22 +4190,6 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <connect gate="G$1" pin="GND" pad="A12-GND B12-GND"/>
 <connect gate="G$1" pin="SHLD" pad="P$1 P$2 P$3 P$4"/>
 <connect gate="G$1" pin="VBUS" pad="A9-VBUS B9-VBUS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PUI_32MM_SPEAKER">
-<gates>
-<gate name="G$1" symbol="PUI_SPEAKER" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="PUI_32MM_ENC">
-<connects>
-<connect gate="G$1" pin="NEG" pad="BLACK-"/>
-<connect gate="G$1" pin="POS" pad="RED+"/>
 </connects>
 <technologies>
 <technology name=""/>
