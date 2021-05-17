@@ -49,7 +49,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -2330,6 +2330,16 @@ DIN 965H</text>
 <wire x1="4.32" y1="6.05" x2="4.32" y2="6.75" width="0.5" layer="46"/>
 <pad name="P$4" x="-4.32" y="6.4" drill="0.5" shape="long" rot="R90"/>
 <wire x1="-4.32" y1="6.05" x2="-4.32" y2="6.75" width="0.5" layer="46"/>
+<wire x1="-5.08" y1="6.73" x2="-5.08" y2="0" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.127" layer="51"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="6.73" width="0.127" layer="51"/>
+<wire x1="5.08" y1="6.73" x2="-5.08" y2="6.73" width="0.127" layer="51"/>
+<smd name="B12-GND" x="-2.75" y="6.4" dx="0.9" dy="1.15" layer="1"/>
+<smd name="B9-VBUS" x="-1.52" y="6.4" dx="0.8" dy="1.15" layer="1"/>
+<smd name="A5-CC1" x="-0.5" y="6.4" dx="0.7" dy="1.15" layer="1"/>
+<smd name="B5-CC2" x="0.5" y="6.4" dx="0.7" dy="1.15" layer="1"/>
+<smd name="A9-VBUS" x="1.52" y="6.4" dx="0.8" dy="1.15" layer="1"/>
+<smd name="A12-GND" x="2.75" y="6.4" dx="0.9" dy="1.15" layer="1"/>
 </package>
 </packages>
 <symbols>
