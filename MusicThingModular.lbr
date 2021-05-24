@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5724,22 +5724,22 @@ Variants with fatter pads for easier soldering, and the LOCK variant which has 5
 </device>
 <device name="SOIC" package="SO16">
 <connects>
-<connect gate="G$1" pin="B1-MSB" pad="5"/>
-<connect gate="G$1" pin="B2" pad="6"/>
-<connect gate="G$1" pin="B3" pad="7"/>
-<connect gate="G$1" pin="B4" pad="8"/>
-<connect gate="G$1" pin="B5" pad="9"/>
-<connect gate="G$1" pin="B6" pad="10"/>
-<connect gate="G$1" pin="B7" pad="11"/>
-<connect gate="G$1" pin="B8-LSB" pad="12"/>
-<connect gate="G$1" pin="COMP" pad="16"/>
-<connect gate="G$1" pin="IOUT" pad="2"/>
-<connect gate="G$1" pin="IOUTB" pad="4"/>
-<connect gate="G$1" pin="V+" pad="13"/>
-<connect gate="G$1" pin="V-" pad="3"/>
-<connect gate="G$1" pin="VLC" pad="1"/>
-<connect gate="G$1" pin="VREF+" pad="14"/>
-<connect gate="G$1" pin="VREF-" pad="15"/>
+<connect gate="G$1" pin="B1-MSB" pad="9"/>
+<connect gate="G$1" pin="B2" pad="10"/>
+<connect gate="G$1" pin="B3" pad="11"/>
+<connect gate="G$1" pin="B4" pad="12"/>
+<connect gate="G$1" pin="B5" pad="13"/>
+<connect gate="G$1" pin="B6" pad="14"/>
+<connect gate="G$1" pin="B7" pad="15"/>
+<connect gate="G$1" pin="B8-LSB" pad="16"/>
+<connect gate="G$1" pin="COMP" pad="4"/>
+<connect gate="G$1" pin="IOUT" pad="6"/>
+<connect gate="G$1" pin="IOUTB" pad="8"/>
+<connect gate="G$1" pin="V+" pad="1"/>
+<connect gate="G$1" pin="V-" pad="7"/>
+<connect gate="G$1" pin="VLC" pad="5"/>
+<connect gate="G$1" pin="VREF+" pad="2"/>
+<connect gate="G$1" pin="VREF-" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
